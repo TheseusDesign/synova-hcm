@@ -918,8 +918,7 @@ footer {
         align-items: center;
         align-content: center;
         background-color: var(--footer-contact-background-color);
-        background: url(./assets/background-pattern.jpg), rgba(var(--synova-neutral-100), .8);
-        background-blend-mode: soft-light, normal;
+        background: url(./assets/background-pattern-light.png);
         background-size: contain;
         padding: var(--section-padding-standard-h) var(--section-padding-standard-w);
 
