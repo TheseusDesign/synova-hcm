@@ -6,11 +6,11 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-image: url(/assets/industries-hero.jpg);
+    background-image: url(../assets/industries-hero.jpg);
     background-image: linear-gradient(to right,
             rgba(var(--synova-neutral-100), .7) 40%,
             rgba(var(--synova-neutral-100), .0) 60%),
-        url(/assets/industries-hero.jpg);
+        url(../assets/industries-hero.jpg);
     background-position: 50% 20%;
     background-size: cover;
 
@@ -45,7 +45,7 @@ header {
         background-image: linear-gradient(to top,
                 rgba(var(--synova-neutral-100), .7) 20%,
                 rgba(var(--synova-neutral-100), 0) 50%),
-            url(/assets/industries-hero.jpg);
+            url(../assets/industries-hero.jpg);
         background-position: 10% 100%;
 
         align-items: flex-end;
