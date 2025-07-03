@@ -718,6 +718,7 @@ nav {
 
     h2 {
         color: var(--layout-7-h2-color);
+        text-align: center;
     }
 
     .subhead {
