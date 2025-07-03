@@ -4,7 +4,7 @@ header {
     padding: var(--section-padding-standard-h) var(--section-padding-standard-w);
     justify-content: center;
     align-items: stretch;
-    background: url(/assets/background-pattern.jpg), var(--header-background-color);
+    background: url(../assets/background-pattern.jpg), var(--header-background-color);
     background-blend-mode: multiply, normal;
     background-position: 10% 100%;
     background-size: contain;

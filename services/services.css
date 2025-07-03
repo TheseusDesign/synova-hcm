@@ -6,11 +6,11 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-image: url(/assets/services-hero.jpg);
+    background-image: url(../assets/services-hero.jpg);
     background-image: linear-gradient(to left,
             rgba(var(--synova-neutral-100), .5) 30%,
             rgba(var(--synova-neutral-100), 0) 50%),
-        url(/assets/services-hero.jpg);
+        url(../assets/services-hero.jpg);
     background-position: 10% 50%;
     background-size: cover;
 
@@ -45,7 +45,7 @@ header {
         background-image: linear-gradient(to top,
                 rgba(var(--synova-neutral-100), .7) 20%,
                 rgba(var(--synova-neutral-100), 0) 40%),
-            url(/assets/services-hero.jpg);
+            url(../assets/services-hero.jpg);
         background-position: 10% 100%;
 
         align-items: flex-end;
