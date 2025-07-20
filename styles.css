@@ -101,6 +101,12 @@ h2 {
     text-transform: capitalize;
 }
 
+@media (max-width:720px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
 p {
     font-size: 16px;
     font-weight: 400;
@@ -333,14 +339,15 @@ nav {
         .header-content {
             width: 100%;
             max-width: 320px;
-            
-            h2,h3{
+
+            h2,
+            h3 {
                 font-size: 36px;
                 font-weight: 400;
                 color: var(--layout-2-h-color);
             }
 
-            .subhead{
+            .subhead {
                 color: var(--layout-2-subhead-color);
             }
         }
@@ -360,7 +367,7 @@ nav {
         }
     }
 
-    &[color-theme="1"]{
+    &[color-theme="1"] {
         --layout-2-background-color: rgb(var(--synova-neutral-300));
         --layout-2-h-color: rgb(var(--synova-blue-800));
         --layout-2-subhead-color: rgb(var(--synova-neutral-800));
@@ -411,14 +418,18 @@ nav {
             box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.25);
             overflow: hidden;
 
-            &:hover{
+            &.collapse{
+                height:fit-content;
+            }
+
+            &:hover {
                 scale: 1.05;
             }
 
             .label {
                 display: flex;
                 flex-direction: column;
-                gap: 12px;
+                gap: 0px;
                 padding: 24px 12px;
                 width: 100%;
                 background-color: var(--layout-3-cardLabel-color);
@@ -435,6 +446,15 @@ nav {
         --layout-3-cardLabel-color: rgba(var(--synova-neutral-900), .8);
         --layout-3-cardLabeltxt-color: rgb(var(--synova-neutral-100));
         --layout-3-background-color: rgb(var(--synova-neutral-100));
+
+        .card:hover {
+            --layout-3-cardLabel-color: rgba(var(--synova-neutral-1000), .9);
+        }
+    }
+    &[color-theme="2"] {
+        --layout-3-cardLabel-color: rgba(var(--synova-neutral-900), .8);
+        --layout-3-cardLabeltxt-color: rgb(var(--synova-neutral-100));
+        --layout-3-background-color: rgb(var(--synova-neutral-300));
 
         .card:hover {
             --layout-3-cardLabel-color: rgba(var(--synova-neutral-1000), .9);
@@ -712,6 +732,7 @@ nav {
 
     h2 {
         color: var(--layout-7-h2-color);
+        text-align: center;
     }
 
     .subhead {
@@ -918,8 +939,7 @@ footer {
         align-items: center;
         align-content: center;
         background-color: var(--footer-contact-background-color);
-        background: url(/assets/background-pattern.jpg), rgba(var(--synova-neutral-100), .8);
-        background-blend-mode: soft-light, normal;
+        background: url(./assets/background-pattern-light.png);
         background-size: contain;
         padding: var(--section-padding-standard-h) var(--section-padding-standard-w);
 
@@ -962,11 +982,26 @@ footer {
                         color: var(--footer-contact-label-color)
                     }
 
-                    input {
-                        outline: none;
-                        border: none;
-                        background-color: var(--footer-contact-inputField-background-color);
-                        padding: 6px;
+                    p {
+                        font-weight: 700;
+                        color: var(--footer-contact-label-color)
+                    }
+                }
+
+                .input-field-checkbox {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 24px;
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 12px;
+
+                        input[type="checkbox"] {
+                            accent-color: var(--footer-contact-button-background-color);
+                        }
+
                     }
                 }
             }
@@ -1038,8 +1073,16 @@ footer {
 }
 
 @media (max-width: 520px) {
-    footer .contact form .field-array {
-        display: flex;
-        flex-direction: column;
+    footer .contact form {
+        .field-array {
+            display: flex;
+            flex-direction: column;
+
+            .input-field-checkbox {
+                flex-direction: column;
+                gap: 12px;
+
+            }
+        }
     }
 }

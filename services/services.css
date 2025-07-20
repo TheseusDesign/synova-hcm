@@ -6,12 +6,12 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-image: url(/assets/services-hero.jpg);
-    background-image: linear-gradient(to left,
-            rgba(var(--synova-neutral-100), .5) 30%,
-            rgba(var(--synova-neutral-100), 0) 50%),
-        url(/assets/services-hero.jpg);
-    background-position: 10% 50%;
+    background-image: url(../assets/services-hero.jpg);
+    background-image: linear-gradient(to right,
+            rgba(var(--synova-neutral-100), .7) 30%,
+            rgba(var(--synova-neutral-100), 0) 60%),
+        url(../assets/services-hero.jpg);
+    background-position: 10% 40%;
     background-size: cover;
 
     .content {
@@ -20,8 +20,8 @@ header {
         gap: 24px;
         width: 100%;
         max-width: 1080px;
-        justify-content: right;
-        align-items: flex-end;
+        justify-content: left;
+        align-items: flex-start;
 
         h1 {
             font-size: 72px;
@@ -45,8 +45,8 @@ header {
         background-image: linear-gradient(to top,
                 rgba(var(--synova-neutral-100), .7) 20%,
                 rgba(var(--synova-neutral-100), 0) 40%),
-            url(/assets/services-hero.jpg);
-        background-position: 10% 100%;
+            url(../assets/services-hero.jpg);
+        background-position: 50% 100%;
 
         align-items: flex-end;
     }
