@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="industries.css">
     <script src="../mini-nav.js" defer></script>
+    <script src="../contact_us.js" defer></script>
 </head>
 
 <body>
@@ -60,14 +61,14 @@
     <section class="layout-8" color-theme="1">
         <div class="content">
             <h2>Offering Industry Solutions</h2>
-            <p>At the heart of every business are unique challenges—whether it’s paying your team accurately and on
+            <p>At the heart of every business are unique challenges—whether it's paying your team accurately and on
                 time, managing a mobile workforce, or navigating complex scheduling demands. We understand that no
                 two industries are alike.
             </p>
             <p>
-                That’s why our solutions are built with direct input from the industries we serve, backed by
-                real-world benchmarking to help you stay ahead of the curve. With us, you’re not just keeping
-                up—you’re setting the pace.
+                That's why our solutions are built with direct input from the industries we serve, backed by
+                real-world benchmarking to help you stay ahead of the curve. With us, you're not just keeping
+                up—you're setting the pace.
             </p>
             <p>
                 Explore your industry to see how we can help you move forward with confidence.
@@ -82,12 +83,6 @@
                 <h3>Healthcare</h3>
                 <p>Managing shift differentials, certifications, and high turnover while staying compliant with HIPAA
                     and ACA regulations.</p>
-                <!-- <a href="">Learn More</a> -->
-            </div>
-            <div class="card">
-                <h3>Construction</h3>
-                <p>Navigating worker classification, union rules, and complex pay structures like prevailing wage
-                    compliance.</p>
                 <!-- <a href="">Learn More</a> -->
             </div>
             <div class="card">
@@ -134,11 +129,6 @@
                 <!-- <a href="">Learn More</a> -->
             </div>
             <div class="card">
-                <h3>Cannabis Industry</h3>
-                <p>Overcoming cash-heavy operations, banking restrictions, and heightened HR compliance risks.</p>
-                <!-- <a href="">Learn More</a> -->
-            </div>
-            <div class="card">
                 <h3>Startups & SMBs</h3>
                 <p>Scaling fast with limited HR resources, managing rapid hiring, and avoiding compliance pitfalls.</p>
                 <!-- <a href="">Learn More</a> -->
@@ -150,12 +140,16 @@
         <div class="contact" id="contact">
             <div class="content">
                 <h2>Don't See Your Industry?</h2>
-                <p class="subhead">Let's start the conversation! We can tailor our services to your needs no matter the industry.</p>
-                <a href="">XXX-XXX-XXXX</a>
+                <p class="subhead">Let's start the conversation! We can tailor our services to your needs no matter the industry.</p>                <p>2750
+                    Buford Hwy Ste 750-308
+                    Duluth, GA 30096,
+                    United States</p>
+                <a href="tel:+18445832019">+1(844) 583-2019</a>
             </div>
             <form action="https://formsubmit.co/9bbd18139ba45322c2e8b15ef4cd29a6" method="POST">
                 <input type="hidden" name="_subject" value="Website Activation">
                 <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_next" value="http://localhost:8000/layouts/#contact?thankyou=true">
 
                 <div class="field-array">
                     <div class="input-field">
@@ -179,9 +173,22 @@
                         <input id="employees" type="text" name="# of employees" required>
                     </div>
                     <div class="input-field">
-                        <label for="country">Country</label>
-                        <input id="country" type="text" name="country" required>
+                        <label for="industry">Industry</label>
+                        <input id="industry" type="text" name="industry" required>
                     </div>
+                    <div class="input-field-checkbox">
+                        <div>
+                            <input type="checkbox" name="Interested In Human Resource Service Solutions" value="True">
+                            <label for="Interested In Human Resource Service Solutions">Human Resource Service Solutions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Payroll Service Solutions" value="True">
+                            <label for="Payroll Service Solutions">Payroll Service Solutions</label>
+                        </div>
+                    </div>
+                    <!-- <input type="text" style="display: none" name="needs" value="" id="checkbox-value"> -->
+                    
+
                 </div>
 
                 <button type="submit">Send</button>
@@ -194,7 +201,7 @@
                     <h3>Contact Us</h3>
                     <ul>
                         <li><a href="#contact">Schedule a Call</a></li>
-                        <li><a href="">Support</a></li>
+                        <li><a href="#contact">Support</a></li>
                     </ul>
                 </div>
                 <div class="content">
