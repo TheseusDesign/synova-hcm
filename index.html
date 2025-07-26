@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>Synova Human Capital Management</title>
     <script src="./mini-nav.js" defer></script>
     <script src="./contact_us.js" defer></script>
@@ -14,7 +15,7 @@
 <body>
     <nav>
         <div class="main">
-            <a href="./">
+            <a href="./" aria-label="Synova HCM Homepage">
                 <img src="./assets/synova-logo.svg" alt="">
             </a>
 
@@ -169,7 +170,7 @@
                     </div>
                     <div class="input-field">
                         <label for="business">Business Name</label>
-                        <input id="busienss" type="text" name="business name" required>
+                        <input id="business" type="text" name="business name" required>
                     </div>
                     <div class="input-field">
                         <label for="employees"># of Employees</label>
@@ -181,13 +182,14 @@
                     </div>
                     <div class="input-field-checkbox">
                         <div>
-                            <input type="checkbox" name="Interested In Human Resource Service Solutions" value="True">
-                            <label for="Interested In Human Resource Service Solutions">Human Resource Service
+                            <input type="checkbox" name="Interest_HR_Solutions" id="Interest_HR_Solutions" value="True">
+                            <label for="Interest_HR_Solutions">Human Resource Service
                                 Solutions</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="Payroll Service Solutions" value="True">
-                            <label for="Payroll Service Solutions">Payroll Service Solutions</label>
+                            <input type="checkbox" name="Interest-Payroll_Solutions" id="Interest-Payroll_Solutions"
+                                value="True">
+                            <label for="Interest-Payroll_Solutions">Payroll Service Solutions</label>
                         </div>
                     </div>
                     <!-- <input type="text" style="display: none" name="needs" value="" id="checkbox-value"> -->

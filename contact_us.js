@@ -5,7 +5,10 @@ function return_solution(){
     slug_cleaned = slug.split('?')[0]
     url_cleaned = document.URL.split('?')[0]
     form_redirect = document.querySelector('[name="_next"]')
-    form_redirect.setAttribute('value',url_cleaned+'#contact?thankyou=true')
+
+    if (form_redirect){
+        form_redirect.setAttribute('value',url_cleaned+'#contact?thankyou=true')
+    }
 }
 
 function thankyou_message(){
