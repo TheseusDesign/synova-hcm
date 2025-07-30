@@ -419,7 +419,12 @@ nav {
             overflow: hidden;
 
             &.collapse{
-                height:fit-content;
+                height: auto;
+                align-self: stretch;
+
+                 .label{
+                    height: 100%;
+                 }
             }
 
             &:hover {
