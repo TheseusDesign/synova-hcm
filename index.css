@@ -5,7 +5,7 @@ header {
             rgba(var(--synova-blue-1000), 0) 50%),
         url(./assets/homepage-womansmiling.jpg);
     background-blend-mode: normal, normal, multiply, normal;
-    background-position: 60% 20%;
+    background-position: 65% 10%;
     background-size: cover;
 
     height: 70vh;
