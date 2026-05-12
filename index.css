@@ -1,4 +1,5 @@
-header {
+header.v1 {
+
     background-image: url(./assets/homepage-womansmiling.jpg);
     background-image: linear-gradient(to right,
             rgba(var(--synova-blue-1000), .5) 30%,
@@ -45,7 +46,8 @@ header {
             flex-direction: row;
             gap: 24px;
 
-            .survey,.call {
+            .survey,
+            .call {
                 text-decoration: unset;
                 display: flex;
                 padding: 12px 24px;
@@ -65,8 +67,99 @@ header {
     }
 }
 
-@media (max-width: 520px) {
-    header {
+header.v2 {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(var(--synova-neutral-300));
+
+    img {
+        width: 50%;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0px;
+
+        gap: calc(var(--section-gap-standard) * 2);
+
+
+        h1{
+            font-weight: 400;
+            color: rgb(var(--synova-blue-900));
+            border-bottom: 3px solid rgb(var(--synova-green-900));
+            padding: 10px 0px;
+
+            .main{
+                font-size: 72px;
+            }
+            .subheader{
+                font-size: 32px;
+            }
+        }
+
+        .achievements {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: var(--section-gap-standard);
+
+            img {
+                width: 72px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                min-width: 200px;
+            }
+
+            .inviz{
+                width: 0px!important;
+                height: 0px!important;
+                font-size: 0px;
+                margin: 0;
+                padding: 0;
+                opacity: 0;
+                overflow: hidden;
+            }
+        }
+
+        .button-array {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            justify-content: center;
+
+            .survey,
+            .call {
+                text-decoration: unset;
+                display: flex;
+                padding: 12px 24px;
+                font-size: 24px;
+
+                &:nth-child(1) {
+                    background-color: rgb(var(--synova-blue-800));
+                    color: rgb(var(--synova-neutral-300));
+                }
+
+                &:nth-child(2) {
+                    background-color: rgb(var(--synova-neutral-200));
+                    color: rgb(var(--synova-green-900));
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    header.v1 {
         align-items: flex-end;
         background-image: linear-gradient(to top,
                 rgba(var(--synova-blue-1000), .5) 40%,
@@ -89,6 +182,18 @@ header {
                     text-align: left;
                 }
             }
+        }
+    }
+
+    header.v2{
+        flex-direction: column;
+
+        img{
+            width: 100%;
+        }
+
+        .content{
+                padding: 0 var(--section-padding-standard-w) var(--section-padding-standard-h) var(--section-padding-standard-w);
         }
     }
 }
