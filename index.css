@@ -129,6 +129,10 @@ header.v2 {
                 opacity: 0;
                 overflow: hidden;
             }
+
+            p{
+                font-size: 14px;
+            }
         }
 
         .button-array {
